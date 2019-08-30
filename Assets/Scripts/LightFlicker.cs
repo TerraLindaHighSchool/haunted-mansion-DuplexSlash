@@ -9,6 +9,7 @@ public class LightFlicker : MonoBehaviour
 {
     public enum FlickerMode
     {
+
         Random,
         AnimationCurve
     }
