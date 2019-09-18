@@ -190,7 +190,6 @@ GameObject:
   m_Component:
   - component: {fileID: 146439427}
   - component: {fileID: 146439426}
-  - component: {fileID: 146439425}
   - component: {fileID: 146439428}
   - component: {fileID: 146439429}
   m_Layer: 0
@@ -200,14 +199,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!81 &146439425
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 146439424}
-  m_Enabled: 1
 --- !u!20 &146439426
 Camera:
   m_ObjectHideFlags: 0
@@ -390,10 +381,10 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: c0f716a9e9ac00c438b95158ba195a58, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
-  Loop: 1
+  Loop: 0
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -4260,7 +4251,9 @@ MonoBehaviour:
   displayImageDuration: 1
   player: {fileID: 885925941}
   exitBackgroundImageCanvasGroup: {fileID: 1612645641}
+  exitAudio: {fileID: 204846262}
   caughtBackgroundImageCanvasGroup: {fileID: 1972510389}
+  caughtAudio: {fileID: 1975864864}
 --- !u!1 &1121828376
 GameObject:
   m_ObjectHideFlags: 0
@@ -5449,10 +5442,10 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 2789d5ce62baaba4ab1ee8bb172304a6, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
-  Loop: 1
+  Loop: 0
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -5767,6 +5760,16 @@ PrefabInstance:
       propertyPath: gameEnding
       value: 
       objectReference: {fileID: 1088605744}
+    - target: {fileID: 6876414515647757741, guid: f6ab67dbdbafaf34c86146fbc4be88d8,
+        type: 3}
+      propertyPath: MaxDistance
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 6876414515647757741, guid: f6ab67dbdbafaf34c86146fbc4be88d8,
+        type: 3}
+      propertyPath: rolloffMode
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f6ab67dbdbafaf34c86146fbc4be88d8, type: 3}
 --- !u!4 &8426191948829916406 stripped
